@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee</title>
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <link rel="stylesheet" href="./fontawesome-free-5.15.4/fontawesome-free-5.15.4-web/css/all.min.css"/>
+    <link rel="stylesheet" href="./fontawesome-free-5.15.4/fontawesome-free-5.15.4-web/css/all.css"/>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="https://giodong16.github.io/coffee/css/home"/>
+    <link rel="stylesheet" href="css/responsive.css"/>
+   
+</head>
+<body>
+    <script>
+        var slideIndex = 0;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("slide-background");
+          if (n > x.length || -n>=x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        //
+        function openModal() {
+  document.getElementById("slide+box-gallery-1").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("slide+box-gallery-1").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("gallery-slide");
+  var dots = document.getElementsByClassName("demo");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+
+        </script>
+<!-- testimonial -->
+<script type="text/javascript"> 
+var counter=1;
+setInterval(function(){
+    document.getElementById('radio' + counter).checked=true;
+    counter++;
+    if(counter>3){
+        counter=1;
+    }
+},5000);
+        </script>
+    <header>
+        <div class="buff"></div>
+        <div id="menu" class="menu"  >
+        <div class="menu-container">
+           <div class="logo">
+            <a href="#"><img src="./img/logo-11.png" /></a>
+           </div> 
+           <div class="nav"> 
+            <a href="#">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#services"> Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#blog">Blogs</a>
+            <a href="#">Contact Us</a>
+          </div>
+          <label for="nav-check" class="nav-bars">
+            <i class="fas fa-bars"></i>
+          </label>
+          <input type="checkbox" hidden name="" class="nav-check" id="nav-check">
+          <label for="nav-check"  class="nav-overplay"></label> 
+          <div class="nav-mobile">
+            <label for="nav-check" class="nav-mobile-close"><i class="fas fa-times"></i></label>
+            <ul>
+            <li> <a class="nav-mobile-text" href="#">Home</a></li>
+            <li><a class="nav-mobile-text" href="#about">About Us</a></li>
+            <li><a class="nav-mobile-text" href="#services"> Services</a></li>
+            <li><a class="nav-mobile-text" href="#gallery">Gallery</a></li>
+            <li><a class="nav-mobile-text" href="#blog">Blogs</a></li>
+            <li><a class="nav-mobile-text" href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </div> 
+     </div>
+       <div class="background-home">
+        <div class="slide-background no_2">
+            <img  src="./img/background/home-1.jpg"/>
+            <div class="sub-background">
+                <h1>COFFEE DAY</h1>
+                <h3>Good coffee for a good day ! </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <br>
+                <a href="#" class="order-button">Order Now</a>
+            </div>
+        </div>
+        <div class="slide-background no_1">
+            <img  src="./img/background/home.jpg"/>
+            <div class="sub-background">
+                <h1>COFFEE DAY</h1>
+                <h3>Come and try our best coffee !</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <br>  <a href="#" class="order-button">Order Now</a>
+            </div>
+            
+        </div>
+        <img class="vien no_1" src="./img//home/vien.png"/>
+        <button class="left"  onclick="plusDivs(-1)">&#10094;</button>
+        <button class="right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+    </header>
+    <section>
+        <div class="about" id="about">
+        <div class="about-1">
+            <div class="about-img">
+              <img class="img-1" src="./img/home/about-images-01.jpg"/>
+              <img class="img-2" src="./img/home/about-images-02.jpg"/> 
+              <img class="img-3" src="./img/home/about-flower.png"/>
+            </div>
+            <div class="about-sub">
+                <h3>ABOUT US</h3>
+                <h2>WE COMBINE CLASSICS AND MODERNITY</h2>
+                <p>
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                </p>
+                <p>Lorem Ipsum is simply dummy text of the printing and unknown printer typesetting industry.</p>
+                <h4>Mon-Fri: 9 AM - 22 PM</h4>
+                <h4>Saturday: 9 AM - 20 PM</h4>
+              <br>  <a href="#">Read More</a>
+            </div>
+        </div>  
+        </div>
+
+        <div class="services" id="services">
+            <img class="vien no_2" src="./img/home/vien_1.png"/>
+            <div class="delivery sub-services">
+                <div class="icon"><i class="fas fa-truck"></i></div>
+                <a href="#">FREE DELIVERY</a>
+                <hr>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. The industry's standard dummy text it to make a type specimen book.</p>
+            </div>
+            <div class="returns sub-services">
+                <div class="icon"><i class="fas fa-retweet"></i></i></div>
+                <a href="#">FREE RETURNS</a>
+                <hr>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. The industry's standard dummy text it to make a type specimen book.</p>
+            </div>
+            <div class="payment sub-services">
+                <div class="icon"><i class="fas fa-hand-holding-usd"></i></div>
+                <a href="#">SECURE PAYMENT</a>
+                <hr>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. The industry's standard dummy text it to make a type specimen book.</p>
+            </div>
+            <div class="gift sub-services no-border">
+                <div class="icon"><i class="fas fa-gift"></i></div>
+                <a href="#">GIFT SERVICE</a>
+                <hr>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. The industry's standard dummy text it to make a type specimen book.</p>
+            </div>
+            <img class="vien no_3" src="./img/viền.png"/>
+        </div>
+
+        <div class="menu-coffee" id="menu-coffee">
+            <div class="col-1">
+                <div class="row">
+                    <div class="row-text">
+                        <a href="#">THE PERFECT CUP</a>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                    <div class="row-img">
+                       <img src="./img/home/menu-01.png">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row-text">
+                        <a href="#">GRINDER</a>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                    <div class="row-img">
+                        <img src="/img/home/menu-02.png">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row-text">
+                        <a href="#">SUPREME BEANS</a>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                    <div class="row-img">
+                        <img src="/img/home/menu-03.png">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="row">
+                    <img src="/img/home/tui-cafe.png"/>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="row">
+                    <div class="row-img">
+                        <img src="/img/home/menu-04.png">
+                    </div>
+                    <div class="row-text">
+                        <a href="#">COFFEE POT</a>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row-img">
+                        <img src="/img/home/menu-05.png">
+                    </div>
+                    <div class="row-text">
+                        <a href="#">COFFEE TO GO</a>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row-img">
+                        <img src="/img/home/menu-06.png">
+                    </div>
+                    <div class="row-text">
+                        <a href="#">THE MOKA POT</a>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery" id="gallery">
+            <h3>ALBUM</h3>
+            <h2>OUR GALLERY</h2>
+            <!--slide-->
+            <div class="gallery-1">
+                <div class="gallery-2 no-1">
+                    <img src="/img/home/gallery-01.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow no-1">
+                </div>
+                <div class="gallery-2 no-2">
+                    <img src="/img/home/gallery-02.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                </div>
+                <div class="gallery-2 no-3">
+                    <img src="/img/home/gallery-03.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow no-1">
+                </div>
+                <div class="gallery-2 no-4">
+                    <img src="/img/home/gallery-04.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                </div>
+                <div class="gallery-2 no-5">
+                    <img src="/img/home/gallery-05.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow no-1">
+                </div>
+            </div>
+            <!--modal+lightbox-->
+            <div class="box-gallery-1" id="slide+box-gallery-1">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal">
+                    <div class="gallery-slide">
+                        <img src="/img/home/gallery-01.jpg" height="600px"/>
+                      </div>
+                  
+                      <div class="gallery-slide">
+                        <img src="/img/home/gallery-02.jpg" height="600px"/>
+                      </div>
+                  
+                      <div class="gallery-slide">
+                        <img src="/img/home/gallery-03.jpg"height="600px" />
+                      </div>
+                      
+                      <div class="gallery-slide">
+                        <img src="/img/home/gallery-04.jpg" height="600px"/>
+                      </div>
+                      <div class="gallery-slide">
+                        <img src="/img/home/gallery-05.jpg"width="500px" />
+                      </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+           <div class="see-more"> <a href="#">See More</a></div>
+        </div>
+
+        <div id="testimonial" class="testimonial">  
+            <h3>CUSTOMER FEEDBACK</h3>
+            <h2>TESTIMONIAL</h2> 
+        <div class="slider">
+            <div class="slides">
+               <input type="radio" name="radio-btn" id="radio1">
+               <input type="radio" name="radio-btn" id="radio2">
+               <input type="radio" name="radio-btn" id="radio3">
+
+               <div class="slide first">
+                    <div class="feedback">
+                        <div class="profile">
+                            <div>
+                                <img src="/img/home/testimonial-03.jpg"/>
+                            </div> 
+                            <div class="name">
+                                <h4>VERONA BLAIR</h4>
+                                <p>Marketing Manager</p>
+                            </div>
+                        </div>
+                        <div class="sub-feedback">
+                            <p>"Cheese on toast airedale the big cheese. Danish fontina cheesy grin airedale danish fontina taleggio the big cheese macaroni cheese port-salut."</p>
+                        </div>
+                    </div>
+               </div>
+               <div class="slide">
+                    <div class="feedback">
+                        <div class="profile">
+                            <div>
+                              <img src="/img/home/testimonial-01.jpg">
+                            </div> 
+                            <div class="name">
+                                <h4>DALY HARRY</h4>
+                                <p>Web Designer</p>
+                            </div>
+                        </div>
+                        <div class="sub-feedback">
+                            <p>"Sportacus andrew weatherall goose Refined gentlemen super mario des lynam alpha trion zap rowsdower, omar sharif old man in pub burt reynolds alpha trion sportacus villain Refined gentlemen."</p>
+                        </div>
+                    </div>
+               </div>
+               <div class="slide">
+                <div class="feedback">
+                    <div class="profile">
+                        <div>
+                            <img src="/img/home/testimonial-02.jpg"/>
+                        </div> 
+                        <div class="name">
+                            <h4>MIA WONG</h4>
+                            <p>CEO-Founder</p>
+                        </div>
+                    </div>
+                    <div class="sub-feedback">
+                        <p>"Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip."</p>
+                    </div>
+                </div>
+               </div>
+               <!--auto show-->
+               <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+               </div>
+               <!--manual-->
+               <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+               </div>
+
+            </div>
+            <!--end slides-->
+        </div><!--end slider-->
+        </div> 
+
+        <div id="blog" class="blog">
+            <div class="blog-title">
+                <h3>FROM OUR BLOG</h3> 
+                <h2>OUR NEW & ARTICLES</h2>
+            </div>
+            <div class="blog-container">
+                <div class="blog-container-01 no-1">
+                    <div class="blog-container-01-img">
+                        <a href="#"><img src="/img/home/blog-img-01.jpg" /></a>
+                    </div>
+                    <div class="blog-container-01-text">
+                        <h3><i class="fas fa-calendar-alt"></i> 25 April, 2022</h3>
+                        <h2>Magna aliquam erat volutpat</h2>
+                        <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-container-01 no-2">
+                    <div class="blog-container-01-img">
+                        <a href="#"><img src="/img/home/blog-img-02.jpg" /></a>
+                    </div>
+                    <div class="blog-container-01-text">
+                            <h3><i class="fas fa-calendar-alt"></i> 25 April, 2022</h3>
+                            <h2>Eodem modo typi qui nunc</h2>
+                            <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram.</p>
+                            <a href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-container-01 no-3">
+                    <div class="blog-container-01-img">
+                        <a href="#"><img src="/img/home/blog-img-03.jpg" /></a>
+                    </div>
+                    <div class="blog-container-01-text">
+                        <h3><i class="fas fa-calendar-alt"></i> 25 April, 2022</h3>
+                        <h2> Ut aliquip ex ea commodo consequat</h2>
+                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+                        <a href="blog-details-5.html">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="letter" class="letter">
+            <div class="letter-container">
+                <div class="letter-nd">
+                    <div class="leter-text">
+                        <i class="fas fa-envelope"></i>
+                        <h2>SUBSCRIBE OUR NEWSLETTER</h2>
+                        <div class="letter-text-content">
+                            <input type="email" placeholder="Enter your email">
+                            <button>SUBSCRIBE</button><i class="fas fa-paper-plane"></i>
+                        </div>
+                        <div class="letter-img" >
+                            <img src="/img/home/letter.png"/>
+                        </div>
+                    </div>
+                  
+                </div>
+               
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="footer" class="footer">
+            <div class="footer-container">
+                <!--about-end-->
+                <div class="col-1-footer col">
+                        <a href="#"><img src="/img/logo-11.png" class="img-fluid"></a>
+                        <p>I use Lorem ipsum text all day long and spend hours formatting it, so I set this site up to make my day a little easier.</p>
+                </div> 
+                <!--link + contact + img -->
+                <div class="col-2-footer col">
+                    <div class="col-2-1-footer">
+                            <h2>Quick Links</h2>
+                            <ul class="list-footer">
+                                <li><a href="#"><i class="fas fa-caret-right"></i>Home</a></li>
+                                <li><a href="#about"><i class="fas fa-caret-right"></i>About Us</a></li>
+                                <li><a href="#servises"><i class="fas fa-caret-right"></i>Services</a></li>
+                                <li><a href="#gallery"><i class="fas fa-caret-right"></i>Gallery</a></li>
+                                <li><a href="#blog"><i class="fas fa-caret-right"></i>Blog</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i>Contact Us</a></li>
+                            </ul>
+                    </div>
+                    <div class="col-2-2-footer">
+                            <h2>contact us</h2>
+                            <ul class="list-footer">
+                                <li>
+                                    <div class="footer-contect">
+                                        <div class="footer-contect-icon">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </div>
+                                        <div class="footer-contect-text">
+                                            <h3>Location :</h3>
+                                            <p>A20 Green Hill Road, <br> Fayetteville,California</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="footer-contect">
+                                        <div class="footer-contect-icon">
+                                            <i class="fas fa-phone-alt"></i>
+                                        </div>
+                                        <div class="footer-contect-text">
+                                            <h3>Phone :</h3>
+                                            <a href="tel:+120922326350">+1 209-223-2635</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="footer-contect">
+                                        <div class="footer-contect-icon">
+                                            <i class="fas fa-envelope"></i>
+                                        </div>
+                                        <div class="footer-contect-text">
+                                            <h3>Email :</h3>
+                                            <a href="mailto:info@ritualcoffee.com">info@ritualcoffee.com</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    <div class="col-2-3-footer">
+                            <h2>Instagram</h2>
+                            <div class="instagram-footer" style="display:none ;">
+                            <ul class="list-footer">
+                                <li class="footer-instagram-img"> 
+                                    <a href="#"><img src="/img/home/insta-01.jpg" class="img-fluid" title="instagram"/></a>
+                                </li>
+                                <li class="footer-instagram-img">
+                                    <a href="#"><img src="/img/home/insta-02.jpg" class="img-fluid" title="instagram"/></a>
+                                </li>
+                                <li class="footer-instagram-img">
+                                    <a href="#"><img src="/img/home/insta-03.jpg" class="img-fluid" title="instagram"/></a>
+                                </li>
+                                <li class="footer-instagram-img">
+                                    <a href="#"><img src="/img/home/insta-04.jpg" class="img-fluid" title="instagram"/></a>
+                                </li>
+                                <li class="footer-instagram-img">
+                                    <a href="#"><img src="/img/home/insta-05.jpg" class="img-fluid" title="instagram"/></a>
+                                </li>
+                                <li class="footer-instagram-img">
+                                    <a href="#"><img src="/img/home/insta-06.jpg" class="img-fluid" title="instagram"/></a>
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                <!--mobile footer-->
+                <div class="footer-about">
+                    <div class="footer-about-container">
+                        <a href="#"><img src="/img/logo-11.png" class="img-fluid"></a>
+                        <p>I use Lorem ipsum text all day long and spend hours formatting it, so I set this site up to make my day a little easier.</p>
+                    </div>
+                </div>
+
+                <div class="footer-link footer-mobile">
+                    <div class="footer-link-container">
+                        <label for="check-Qlink" class="footer-link-container-title footer-container-title">
+                            <h2>Quick Links</h2>
+                            <div class="qlink-more">
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                        </label>
+                        <input type="checkbox" hidden name="" id="check-Qlink" class="check-Qlink"/>
+                        
+                        <div class="footer-link-container-nav">      
+                            <ul class="list-footer-mobile">
+                                <li><a href="#"><i class="fas fa-caret-right"></i>Home</a></li>
+                                <li><a href="#about"><i class="fas fa-caret-right"></i>About Us</a></li>
+                                <li><a href="#servises"><i class="fas fa-caret-right"></i>Services</a></li>
+                                <li><a href="#gallery"><i class="fas fa-caret-right"></i>Gallery</a></li>
+                                <li><a href="#blog"><i class="fas fa-caret-right"></i>Blog</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i>Contact Us</a></li>
+                            </ul>
+                        </div>  
+                    </div>
+                </div>
+                <div class="footer-contact footer-mobile">
+                    <div class="footer-contact-container">
+                        <label for="check-contact" class="footer-contact-container-title footer-container-title">
+                            <h2>contact us</h2>
+                            <div class="qlink-more">
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                        </label>
+                        <input type="checkbox" hidden name="" id="check-contact" class="check-contact"/>
+                        
+                        <div class="footer-contact-container-nav">      
+                            <ul class="list-footer-mobile">                              
+                                    <li>
+                                        <div class="footer-contect">
+                                            <div class="footer-contect-icon">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                            </div>
+                                            <div class="footer-contect-text">
+                                                <h3>Location :</h3>
+                                                <a target="_blank" href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Giao+th%C3%B4ng+V%E1%BA%ADn+t%E1%BA%A3i/@21.0281545,105.8012318,17z/data=!4m5!3m4!1s0x3135ab424a50fff9:0xbe3a7f3670c0a45f!8m2!3d21.0281545!4d105.8034205?hl=vi-VN"><p>Đại học GTVT, <br> Cầu Giấy, Hà Nội</p></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="footer-contect">
+                                            <div class="footer-contect-icon">
+                                                <i class="fas fa-phone-alt"></i>
+                                            </div>
+                                            <div class="footer-contect-text">
+                                                <h3>Phone :</h3>
+                                                <a href="#">+0 123-567-6789</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="footer-contect">
+                                            <div class="footer-contect-icon">
+                                                <i class="fas fa-envelope"></i>
+                                            </div>
+                                            <div class="footer-contect-text">
+                                                <h3>Email :</h3>
+                                                <a href="">coffee@gmail.com</a>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                            </ul>
+                        </div>  
+                    </div>
+                </div>                
+                <div class="footer-instagram footer-mobile">
+                    <div class="footer-instagram-container">
+                        <label for="check-instagram" class="footer-instagram-container-title footer-container-title">
+                            <h2>Instagram</h2>
+                            <div class="qlink-more">
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                        </label>
+                        <input type="checkbox" hidden name="" id="check-instagram" class="check-instagram"/>
+                        
+                        <div class="footer-instagram-container-nav">      
+                            <ul class="list-footer-mobile">
+                                    <li class="footer-instagram-img"> 
+                                        <a href="#"><img src="/img/home/insta-01.jpg" class="img-fluid" title="instagram"/></a>
+                                    </li>
+                                    <li class="footer-instagram-img">
+                                        <a href="#"><img src="/img/home/insta-02.jpg" class="img-fluid" title="instagram"/></a>
+                                    </li>
+                                    <li class="footer-instagram-img">
+                                        <a href="#"><img src="/img/home/insta-03.jpg" class="img-fluid" title="instagram"/></a>
+                                    </li>
+                                    <li class="footer-instagram-img">
+                                        <a href="#"><img src="/img/home/insta-04.jpg" class="img-fluid" title="instagram"/></a>
+                                    </li>
+                                    <li class="footer-instagram-img">
+                                        <a href="#"><img src="/img/home/insta-05.jpg" class="img-fluid" title="instagram"/></a>
+                                    </li>
+                                    <li class="footer-instagram-img">
+                                        <a href="#"><img src="/img/home/insta-06.jpg" class="img-fluid" title="instagram"/></a>
+                                    </li>
+                                </ul>
+                        </div>  
+                    </div>
+                </div>
+                </div>
+                <!--Copyright-->
+                <div class="end-footer">
+                    <div class="end-footer-copyright">
+                        <p>Copyright © 2022 <a href="#">Coffee</a>. All Rights Reserved.</p>
+                    </div>
+                    <div class="end-footer-icon">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+    </footer>
+</body>
+</html>
