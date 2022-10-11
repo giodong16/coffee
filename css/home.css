@@ -1,3 +1,7 @@
+.menu{
+display:none;}
+.vien{
+display:none;}
 @font-face{
     src: url(../font/Marcellus/Marcellus-Regular.ttf);
     font-family:'Marcellus';
