@@ -1,9 +1,9 @@
 @font-face{
-    src: url(/font/Marcellus/Marcellus-Regular.ttf);
+    src: url(../font/Marcellus/Marcellus-Regular.ttf);
     font-family:'Marcellus';
 }
 @font-face{
-    src: url(/font/Cairo/Cairo-VariableFont_wght.ttf);
+    src: url(../font/Cairo/Cairo-VariableFont_wght.ttf);
     font-family: 'Cairo';
 }
 html{
@@ -303,7 +303,7 @@ header{
     width: 100%;
     height: 100%;  
     display: flex;
-    background-image:url(/img/home/Services.jpg);
+    background-image:url(../img/home/Services.jpg);
     background-attachment: fixed;
     background-position: center;
     margin-bottom:100px;
@@ -499,7 +499,7 @@ hr{
 }
 .gallery{
     text-align: center;
-    background-image: url(/img/background/gallery.jpg);
+    background-image: url(../img/background/gallery.jpg);
 }
 .gallery h3{
     color: white;
@@ -672,7 +672,7 @@ hr{
   padding-top: 40px;
   padding-bottom: 160px;
   color: white;
-  background-image: url(/img/home/blog-title-background.jpg);
+  background-image: url(../img/home/blog-title-background.jpg);
 }
 .blog-container{
     width: 96%;
@@ -739,7 +739,7 @@ hr{
 .letter-nd{
     box-sizing: border-box;
     padding:33px 0;
-    background-image: url(/img/background/bg-letter.jpg);
+    background-image: url(../img/background/bg-letter.jpg);
 }
 .letter-nd i{
     font-size: 45px;
